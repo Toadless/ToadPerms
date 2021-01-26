@@ -1,0 +1,41 @@
+name: ToadPerms
+main: uk.toadl3ss.Toadperms.Main
+author: Toadless
+website: toadl3ss.uk
+description: A permisions plugin
+api-version: 1.8
+version: 1.0
+database: false
+
+permissions:
+  tp.modify:
+    description: Allows you to rank people
+  tp.blockBreak:
+    description: Allows you to break blocks
+  tp.blockPlace:
+    description: Allows you to place blocks
+  tp.grant:
+    description: Allows you to grank people
+  tp.anyRank:
+    description: Allows you to grant people
+  tp.grants:
+    description: Allows you to view a players grants
+  tp.reload:
+    description: Allows you to reload the config
+
+commands:
+  rank:
+    description: Rank a user
+    usage: /<command>
+  grant:
+    description: Rank a user through a gui
+    usage: /<command>
+  grants:
+    description: View a users grants
+    usage: /<command>
+  permsreload:
+    description: Reloads the config
+    usage: /<command>
+  uuid:
+    description: Tells you your uuid (Unique user id)
+    usage: /<command>

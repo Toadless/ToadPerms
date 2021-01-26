@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Toadperms:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Toadperms_jar</output-path>
+    <root id="archive" name="Toadperms.jar">
+      <element id="module-output" name="Toadperms" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/spigot-api-1.8-R0.1-20150227.224658-194.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/mongo-java-driver-3.12.7 (2).jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

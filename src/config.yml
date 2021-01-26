@@ -1,0 +1,72 @@
+#############################################################
+#   .    _______ _____                          __ _ _      #
+#  /\\  |__   __|  __ \                         \ \ \ \     #
+# ( ( )    | |  | |__) |__ _ __ _ __ ___  ___    \ \ \ \    #
+#  \\/     | |  |  ___/ _ \ '__| '_ ` _ \/ __|    ) ) ) )   #
+#   '      | |  | |  |  __/ |  | | | | | \__ \   / / / /    #
+#          |_|  |_|   \___|_|  |_| |_| |_|___/  /_/_/_/     #
+# ======================================================    #
+#               An advanced permissions plugin.             #
+#############################################################
+
+# The database url
+# Must be mongodb
+database: 'MONGO_DB'
+
+# The default group
+default: Member
+
+# All groups
+Groups:
+  Owner:
+    item: WOOL
+    byte: 14
+    prefix: "&7[&4Owner&7]&4"
+    message: "&c&lOWNER"
+    permissions:
+      - "*"
+  Dev:
+    item: WOOL
+    byte: 3
+    prefix: "&7[&bDev&7]&b"
+    message: "&b&lDEV"
+    permissions:
+      - "*"
+  Admin:
+    item: WOOL
+    byte: 10
+    prefix: "&7[&cAdmin&7]&c"
+    message: "&c&lADMIN"
+    permissions:
+      - "*"
+  MVPExtra:
+    item: WOOL
+    byte: 2
+    prefix: "&7[&dMVP++&7]&d"
+    message: "&d&lMVP++"
+    permissions:
+      - tp.blockPlace # The default blockPlace permission
+  MVP:
+    item: WOOL
+    byte: 9
+    prefix: "&7[&dMVP&7]&d"
+    message: "&d&lMVP"
+    permissions:
+      - tp.blockPlace # The default blockPlace permission
+  Member:
+
+    item: WOOL # The item that appears in the GUI
+    byte: 8
+    prefix: "&7[&fMember&7]" # The prefix of that rank. You you dont want it? Leave it blank If you want colors use '\xa7' followed by the minecraft color code.
+    message: "&7NORMAL"
+    permissions: # All permissions of this rank.  Format it like to:
+      - tp.blockBreak # The default blockBreak permission
+
+
+# Scoreboard
+# The purpose of the scoreboard is
+# to display the users rank
+Scoreboard:
+  enabled: true
+  title: "&5Toads Network"
+  website: "&7toadl3ss.uk"
